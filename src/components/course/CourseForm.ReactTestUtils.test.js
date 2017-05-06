@@ -19,7 +19,7 @@ function setup(saving){
     props,
     renderer,
     output
-  }
+  };
 }
 
 describe('CourseForm via react test utils', () => {
@@ -34,11 +34,11 @@ describe('CourseForm via react test utils', () => {
     const { output } = setup(false);
     let saveButton = output.props.children[5];
     expect(saveButton.props.value).toBe('Save');
-  })
+  });
 
   it('should say Saving when the app is saving', ()=>{
     const { output } = setup(true);
     let saveButton = output.props.children[5];
     expect(saveButton.props.value).toBe('Saving...');
-  })
+  });
 });
